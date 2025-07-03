@@ -31,11 +31,36 @@ const Footer = () => {
         <div>
           <h3>Contact Info</h3>
           <ul className="list-none space-y-7">
-            <li>Plot 22055, Unit G1, Gaborone West Industrial, Gaborone</li>
-            <li>(+267) 3190837 / 74294929</li>
-            <li>admin@kpjdrilling.co.bw</li>
+            <li className="hover:underline">
+              <a
+                href="https://maps.app.goo.gl/LQUDXTuXSkfPvbqa7"
+                target="_blank"
+              >
+                Plot 22055, Unit G1, Gaborone West Industrial, Gaborone
+              </a>
+            </li>
+            <li>
+              (+267){" "}
+              <a href="tel:+2673190837" className="hover:underline">
+                3190837
+              </a>{" "}
+              /{" "}
+              <a href="tel:+26774294929" className="hover:underline">
+                74294929
+              </a>
+            </li>
+            <li>
+              {" "}
+              <a
+                href="mailto:admin@kpjdrilling.co.bw"
+                className="hover:underline "
+              >
+                admin@kpjdrilling.co.bw
+              </a>
+            </li>
           </ul>
         </div>
+        {/* copyright */}
         <div className="text-center space-y-8 place-content-center">
           <SocialBadge />
           <div className="space-y-2">
