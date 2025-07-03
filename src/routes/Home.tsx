@@ -9,6 +9,7 @@ import drilling from "/drilling.svg";
 import support from "/support.svg";
 import delivery from "/delivery.svg";
 import mud from "/mud.svg";
+import calloutCover from "callout-img.jpg";
 
 const cardItems = [
   {
@@ -54,7 +55,7 @@ const Home = () => {
               Botswana.
             </p>
           </div>
-          <Button>read more</Button>
+          <Button className="place-self-start">read more</Button>
         </div>
       </section>
       <section className="container mx-auto my-20 items-center">
@@ -66,6 +67,39 @@ const Home = () => {
           {cardItems.map((item) => (
             <ServiceCard text={item.text} img={item.image} imgAlt={item.alt} />
           ))}
+        </div>
+      </section>
+      <section className="container mx-auto my-20">
+        <h2>our products</h2>
+        <Button>view all products</Button>
+      </section>
+      <section className="mt-20 h-150 bg-[url('/callout-img.jpg')] bg-cover bg-center">
+        <div className="bg-linear-to-t from-primary to-white/0 h-full place-content-center">
+          <div className="container mx-auto w-240 space-y-8">
+            <div className="text-center">
+              <h2 className="text-white text-5xl/normal">
+                Trusted Since 2001 - Locally Rooted, Globally Connected
+              </h2>
+              <p className="text-white w-180 mx-auto text-xl/normal">
+                With over 28 years of experience, we provide high-performance
+                drilling consumables across Botswana.
+              </p>
+            </div>
+            <Button color="white" className="!place-self-center">
+              more details
+            </Button>
+          </div>
+        </div>
+      </section>
+      <section className="bg-primary py-10">
+        <div className="container mx-auto flex justify-between items-center gap-10">
+          <div className="text-white">
+            <h2 className="text-5xl">Request A Quote</h2>
+            <p className="text-xl/normal">
+              Get a Customized Quote for Your Drilling Needs Today!
+            </p>
+          </div>
+          <Button color="white">view all products</Button>
         </div>
       </section>
     </main>
