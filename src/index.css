@@ -1,9 +1,25 @@
 @import "tailwindcss";
 
-:root {
-  --primary: #0A2E57;
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-background: var(--background);
 }
 
-.bg-primary {
-  background-color: var(--primary);
+:root {
+  --primary: #0A2E57;
+  --secondary: #1682DB;
+  --background: #fff;
+}
+
+@layer base {
+  body {
+    @apply bg-background
+  }
+  h2 {
+    @apply text-3xl capitalize font-bold mb-2
+  }
+  p {
+    @apply text-lg
+  }
 }
