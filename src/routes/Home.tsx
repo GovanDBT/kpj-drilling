@@ -2,6 +2,36 @@ import heroImage from "/landing-image.jpg";
 import aboutImage from "/about-img.jpg";
 import Badge from "../components/Badge";
 import Button from "../components/Button";
+import ServiceCard from "../components/ServiceCard";
+
+// card images
+import drilling from "/drilling.svg";
+import support from "/support.svg";
+import delivery from "/delivery.svg";
+import mud from "/mud.svg";
+
+const cardItems = [
+  {
+    image: drilling,
+    alt: "Card icon of a drilling machine",
+    text: "Drilling Equipment Supply",
+  },
+  {
+    image: support,
+    alt: "Card icon of a support system",
+    text: "Technical Support & Advice",
+  },
+  {
+    image: delivery,
+    alt: "Card icon of a delivery network",
+    text: "Local Delivery Across Botswana",
+  },
+  {
+    image: mud,
+    alt: "Card icon of a mud drilling machine",
+    text: "Custom Drilling Mud Formulation",
+  },
+];
 
 const Home = () => {
   return (
@@ -25,6 +55,17 @@ const Home = () => {
             </p>
           </div>
           <Button>read more</Button>
+        </div>
+      </section>
+      <section className="container mx-auto my-20 items-center">
+        <div className="flex justify-between mb-8">
+          <h2>our services</h2>
+          <Button>more services</Button>
+        </div>
+        <div className="grid grid-cols-4 gap-6">
+          {cardItems.map((item) => (
+            <ServiceCard text={item.text} img={item.image} imgAlt={item.alt} />
+          ))}
         </div>
       </section>
     </main>
