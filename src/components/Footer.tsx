@@ -1,4 +1,5 @@
 import { ChevronLeft } from "lucide-react";
+import SocialBadge from "./SocialBadge";
 
 const footerLinks = [
   { title: "Home", link: "/" },
@@ -35,16 +36,23 @@ const Footer = () => {
             <li>admin@kpjdrilling.co.bw</li>
           </ul>
         </div>
-        <div className="text-center space-y-2 place-content-center">
-          <p className="text-sm text-[#D4D4D4]">
-            &copy; 2025 KPJ Drilling Pty Ltd. All Rights Reserved.
-          </p>
-          <p className="text-sm text-[#D4D4D4]">
-            Designed & Developed by{" "}
-            <a href="" className="font-bold underline">
-              Webmart
-            </a>{" "}
-          </p>
+        <div className="text-center space-y-8 place-content-center">
+          <SocialBadge />
+          <div className="space-y-2">
+            <p className="text-sm text-[#D4D4D4]">
+              &copy; 2025 KPJ Drilling Pty Ltd. All Rights Reserved.
+            </p>
+            <p className="text-sm text-[#D4D4D4]">
+              Designed & Developed by{" "}
+              <a
+                href="https://www.webmart.co.bw/"
+                target="_blank"
+                className="font-bold border-b-1 hover:text-[#50c3c0] transition ease-in"
+              >
+                Webmart
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
