@@ -36,7 +36,7 @@ const cardItems = [
 
 const Home = () => {
   return (
-    <main>
+    <div>
       <header>
         <img src={heroImage} alt="" />
       </header>
@@ -102,7 +102,7 @@ const Home = () => {
           <Button color="white">view all products</Button>
         </div>
       </section>
-    </main>
+    </div>
   );
 };
 
