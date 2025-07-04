@@ -4,7 +4,7 @@ import Button from "../components/Button";
 import ServiceCard from "../components/ServiceCard";
 
 // Images
-import aboutImage from "/about-img.jpg";
+import aboutImage from "/about-section.webp";
 import heroImage from "/landing-image.jpg";
 import drilling from "/drilling.svg";
 import support from "/support.svg";
@@ -42,8 +42,12 @@ const Home = () => {
         <img src={heroImage} alt="" />
       </header>
       {/* ABOUT */}
-      <section className="grid md:grid-cols-2 gap-y-10 container my-20 items-center">
-        <img src={aboutImage} alt="" className="order-2 lg:order-1" />
+      <section className="grid md:grid-cols-2 gap-y-10 gap-x-8 container my-20 items-center">
+        <img
+          src={aboutImage}
+          alt="KPJ drilling pipes and chemicals"
+          className="order-2 lg:order-1"
+        />
         <div className="flex flex-col space-y-8 order-1 lg:order-2">
           <Badge text="About Us" className="hidden lg:inline-flex" />
           <div>
@@ -67,7 +71,7 @@ const Home = () => {
       <section className="container my-20 items-center">
         <div className="flex justify-between mb-8">
           <h2>our services</h2>
-          <Button>more services</Button>
+          <Button className="place-self-center">more services</Button>
         </div>
         <div className="grid lg:grid-cols-4 gap-6 justify-center">
           {cardItems.map((item) => (
@@ -81,7 +85,7 @@ const Home = () => {
         <Button>view all products</Button>
       </section>
       {/* BANNER IMG */}
-      <section className="mt-20 h-150 bg-[url('/callout-img.jpg')] bg-cover bg-center">
+      <section className="mt-20 h-150 bg-[url('/callout-section.webp')] bg-cover bg-center">
         <div className="bg-linear-to-t from-primary to-white/0 h-full place-content-center">
           <div className="container lg:max-w-240 space-y-8">
             <div className="text-center">
@@ -102,7 +106,7 @@ const Home = () => {
       {/* CALLOUT */}
       <section className="bg-primary py-18">
         <div className="container mx-auto flex lg:flex-row flex-col justify-between items-center gap-10">
-          <div className="text-white text-center">
+          <div className="text-white text-center lg:text-left">
             <h2 className="text-5xl">Request A Quote</h2>
             <p className="text-2xl/normal lg:text-xl/normal">
               Get a Customized Quote for Your Drilling Needs Today!
