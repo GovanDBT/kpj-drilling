@@ -9,7 +9,6 @@ import drilling from "/drilling.svg";
 import support from "/support.svg";
 import delivery from "/delivery.svg";
 import mud from "/mud.svg";
-import calloutCover from "callout-img.jpg";
 
 const cardItems = [
   {
