@@ -13,10 +13,12 @@ const Button = ({ children, className, color = "primary" }: Props) => {
   return (
     <button
       className={
-        `bg-${color} ${
-          color === "white"
-            ? "text-primary hover:bg-secondary hover:text-white"
-            : "text-white"
+        `${
+          color === "primary"
+            ? "bg-primary text-white"
+            : color === "secondary"
+            ? "bg-secondary text-white"
+            : "bg-white text-primary hover:bg-secondary hover:text-white"
         } capitalize flex gap-2 px-6 py-3 rounded-3xl cursor-pointer hover:bg-secondary transition duration-300 ease-in-out group text-nowrap text-lg ` +
         className
       }
