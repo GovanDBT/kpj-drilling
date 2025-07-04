@@ -9,7 +9,7 @@ const Root = () => {
       <div className="mb-auto ">
         <Outlet />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

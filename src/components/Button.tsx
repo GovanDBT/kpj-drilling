@@ -1,3 +1,6 @@
+/**
+ * custom button component
+ */
 import { ArrowUpRight } from "lucide-react";
 
 interface Props {
@@ -14,7 +17,7 @@ const Button = ({ children, className, color = "primary" }: Props) => {
           color === "white"
             ? "text-primary hover:bg-secondary hover:text-white"
             : "text-white"
-        } capitalize flex gap-2 px-6 py-3 rounded-3xl cursor-pointer hover:bg-secondary transition duration-300 ease-in-out group text-nowrap ` +
+        } capitalize flex gap-2 px-6 py-3 rounded-3xl cursor-pointer hover:bg-secondary transition duration-300 ease-in-out group text-nowrap text-lg ` +
         className
       }
     >

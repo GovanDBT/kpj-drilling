@@ -1,24 +1,23 @@
+/**
+ * Navigation menu component
+ */
 import { Link, NavLink } from "react-router-dom";
+// modules
 import SideMenu from "./SideMenu";
+import links from "../routes/routeLinks";
 
 const Navbar = () => {
-  const links = [
-    { name: "Home", url: "/" },
-    { name: "About Us", url: "/about" },
-    { name: "Products", url: "/products" },
-    { name: "Services", url: "/services" },
-    { name: "Contacts", url: "/contacts" },
-    { name: "Get a Quote", url: "/quote" },
-  ];
   return (
     <nav className="bg-primary text-white py-5 lg:py-0">
-      <div className="container mx-auto flex justify-between items-center">
-        <h2 className="text-3xl font-bold m-0">
+      <div className="container flex justify-between items-center">
+        {/* Logo */}
+        <h2 className="font-bold m-0">
           <Link to="/">
             KPJ Drilling{" "}
             <span className="text-[13px] font-medium">(Pty)Ltd</span>
           </Link>
         </h2>
+        {/* Desktop menu list */}
         <div className="hidden lg:inline-flex">
           <ul className="list-none grid grid-cols-6 text-center gap-6">
             {links.map((link) => (
@@ -37,6 +36,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+        {/* Mobile menu list + hamburger */}
         <div className="lg:hidden">
           <SideMenu />
         </div>
