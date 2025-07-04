@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="bg-primary text-white py-5 lg:py-0">
       <div className="container flex justify-between items-center">
         {/* Logo */}
-        <h2 className="font-bold m-0">
+        <h2 className="font-bold text-3xl m-0">
           <Link to="/">
             KPJ Drilling{" "}
             <span className="text-[13px] font-medium">(Pty)Ltd</span>

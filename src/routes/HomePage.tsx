@@ -51,9 +51,12 @@ const Home = () => {
         <div className="flex flex-col space-y-8 order-1 lg:order-2">
           <Badge text="About Us" className="hidden lg:inline-flex" />
           <div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between">
               <h2>KPJ drilling (Pty) Ltd</h2>
-              <Badge text="About Us" className="lg:hidden text-[13px]" />
+              <Badge
+                text="About Us"
+                className="lg:hidden text-[13px] !place-self-center"
+              />
             </div>
             <p>
               KPJ Drilling (Pty) Ltd is a supplier of drilling consumables for
@@ -69,7 +72,7 @@ const Home = () => {
       </section>
       {/* SERVICES */}
       <section className="container my-20 items-center">
-        <div className="flex justify-between mb-8">
+        <div className="flex flex-col md:flex-row text-center md:text-left justify-between mb-8">
           <h2>our services</h2>
           <Button className="place-self-center">more services</Button>
         </div>
@@ -89,10 +92,10 @@ const Home = () => {
         <div className="bg-linear-to-t from-primary to-white/0 h-full place-content-center">
           <div className="container lg:max-w-240 space-y-8">
             <div className="text-center">
-              <h2 className="text-white text-5xl/normal">
+              <h2 className="text-white text-3xl/normal">
                 Trusted Since 2001 - Locally Rooted, Globally Connected
               </h2>
-              <p className="text-white lg:max-w-180 mx-auto text-2xl/normal lg:text-xl/normal">
+              <p className="text-white lg:max-w-180 mx-auto text-xl/normal">
                 With over 28 years of experience, we provide high-performance
                 drilling consumables across Botswana.
               </p>

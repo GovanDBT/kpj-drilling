@@ -16,7 +16,7 @@ const Footer = () => {
               <Link
                 to={item.url}
                 key={item.url}
-                className="hover:underline py-5 lg:py-0 w-full lg:w-fit"
+                className="hover:underline py-2 lg:py-0 w-full lg:w-fit"
               >
                 <li className="flex items-center gap-3 text-xl lg:text-lg justify-center">
                   <ChevronLeft size={16} className="hidden lg:inline-block" />
