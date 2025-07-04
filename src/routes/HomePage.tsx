@@ -92,7 +92,7 @@ const Home = () => {
         <div className="bg-linear-to-t from-primary to-white/0 h-full place-content-center">
           <div className="container lg:max-w-240 space-y-8">
             <div className="text-center">
-              <h2 className="text-white text-3xl/normal">
+              <h2 className="text-white text-3xl/normal lg:text-5xl/normal">
                 Trusted Since 2001 - Locally Rooted, Globally Connected
               </h2>
               <p className="text-white lg:max-w-180 mx-auto text-xl/normal">
