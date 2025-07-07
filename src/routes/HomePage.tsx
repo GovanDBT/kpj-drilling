@@ -53,11 +53,11 @@ const Home = () => {
           }}
           viewport={{ once: true }}
           transition={{ type: "spring", duration: 2, delay: 0.2 }}
+          className="order-2 lg:order-1"
         >
           <img
             src={aboutImage}
             alt="KPJ drilling pipes and chemicals"
-            className="order-2 lg:order-1"
             title="KPJ drilling pipes and chemicals"
           />
         </motion.div>
