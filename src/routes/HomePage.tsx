@@ -10,6 +10,7 @@ import drilling from "/drilling.svg";
 import support from "/support.svg";
 import delivery from "/delivery.svg";
 import mud from "/mud.svg";
+import Callout from "../components/Callout";
 
 const cardItems = [
   {
@@ -107,17 +108,7 @@ const Home = () => {
         </div>
       </section>
       {/* CALLOUT */}
-      <section className="bg-primary py-18">
-        <div className="container mx-auto flex lg:flex-row flex-col justify-between items-center gap-10">
-          <div className="text-white text-center lg:text-left">
-            <h2 className="text-5xl">Request A Quote</h2>
-            <p className="text-2xl/normal lg:text-xl/normal">
-              Get a Customized Quote for Your Drilling Needs Today!
-            </p>
-          </div>
-          <Button color="white">view all products</Button>
-        </div>
-      </section>
+      <Callout className="!p-18" />
     </div>
   );
 };

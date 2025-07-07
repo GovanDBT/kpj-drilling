@@ -24,12 +24,12 @@ const Navbar = () => {
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "font-bold bg-secondary py-6"
-                    : "font-normal py-6 hover:text-[#90aed0]"
+                    ? "font-bold bg-secondary py-6 px-2"
+                    : "font-normal py-6 px-2 hover:bg-secondary"
                 }
                 to={link.url}
               >
-                <li key={link.url} className="text-nowrap">
+                <li key={link.url} className="text-nowrap text-[16px]">
                   {link.name}
                 </li>
               </NavLink>

@@ -16,6 +16,9 @@
   body {
     @apply bg-background
   }
+  h1 {
+    @apply text-4xl/normal lg:text-5xl/normal capitalize font-bold mb-2
+  }
   h2 {
     @apply text-4xl/normal lg:text-3xl/normal capitalize font-bold mb-3
   }
@@ -23,6 +26,9 @@
     @apply text-3xl/normal lg:text-2xl/normal capitalize font-bold mb-3
   }
   p {
+    @apply text-[19px]/8 lg:text-lg/8
+  }
+  li {
     @apply text-[19px]/8 lg:text-lg/8
   }
   .container {

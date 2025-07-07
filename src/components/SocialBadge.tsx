@@ -9,7 +9,7 @@ const SocialBadge = () => {
     >
       <FaFacebook size={45} />
       <div className="text-left">
-        <p className="uppercase text-[10px] font-light">Facebook</p>
+        <p className="uppercase text-[11px]/normal font-light">Facebook</p>
         <p className="font-bold text-[18px]">KPJ Drilling</p>
       </div>
     </a>

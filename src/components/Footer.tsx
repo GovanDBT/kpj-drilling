@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="bg-[#0A142F] text-white py-10">
       <div className="container grid lg:grid-cols-3 gap-8 text-center lg:text-left">
         {/* Quick links */}
-        <div className="border-b-1 border-[#ffffff3d] lg:border-0 pb-6">
+        <div className="border-b-1 border-[#ffffff3d] lg:border-0 pb-6 lg:pb-0">
           <h3>Quick Links</h3>
           <ul className="list-none flex flex-col space-y-4 items-center lg:items-start">
             {links.map((item) => (
@@ -27,7 +27,7 @@ const Footer = () => {
           </ul>
         </div>
         {/* Contact information */}
-        <div className="border-b-1 border-[#ffffff3d] lg:border-0 pb-6">
+        <div className="border-b-1 border-[#ffffff3d] lg:border-0 pb-6 lg:pb-0">
           <h3>Contact Info</h3>
           <ul className="list-none space-y-7">
             <li className="hover:underline text-xl lg:text-lg">
