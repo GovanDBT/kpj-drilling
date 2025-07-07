@@ -15,7 +15,9 @@ const Callout = ({ sectionClassName, containerClassName }: Props) => {
         }
       >
         <div className="text-white text-center lg:text-left">
-          <h2 className="text-5xl">Request A Quote</h2>
+          <h2 className="text-4xl/normal lg:text-5xl/normal">
+            Request A Quote
+          </h2>
           <p className="text-2xl/normal lg:text-xl/normal">
             Get a Customized Quote for Your Drilling Needs Today!
           </p>
