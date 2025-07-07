@@ -19,7 +19,7 @@ const SideMenu = () => {
                   : "font-normal py-6 hover:bg-secondary"
               }
             >
-              <li key={item.url} className="text-nowrap text-xl/8">
+              <li key={item.url} className="text-nowrap text-lg/8">
                 {item.name}
               </li>
             </NavLink>

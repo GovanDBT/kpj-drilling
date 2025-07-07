@@ -11,6 +11,7 @@ import support from "/support.svg";
 import delivery from "/delivery.svg";
 import mud from "/mud.svg";
 import Callout from "../components/Callout";
+import { motion } from "motion/react";
 
 const cardItems = [
   {
@@ -44,11 +45,22 @@ const Home = () => {
       </header>
       {/* ABOUT */}
       <section className="grid md:grid-cols-2 gap-y-10 gap-x-8 container my-20 items-center">
-        <img
-          src={aboutImage}
-          alt="KPJ drilling pipes and chemicals"
-          className="order-2 lg:order-1"
-        />
+        <motion.div
+          initial={{ transform: "translateX(-100px)", opacity: 0 }}
+          whileInView={{
+            transform: "translateX(0px)",
+            opacity: 100,
+          }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", duration: 2, delay: 0.2 }}
+        >
+          <img
+            src={aboutImage}
+            alt="KPJ drilling pipes and chemicals"
+            className="order-2 lg:order-1"
+            title="KPJ drilling pipes and chemicals"
+          />
+        </motion.div>
         <div className="flex flex-col space-y-8 order-1 lg:order-2">
           <Badge text="About Us" className="hidden lg:inline-flex" />
           <div>
@@ -108,7 +120,7 @@ const Home = () => {
         </div>
       </section>
       {/* CALLOUT */}
-      <Callout className="!p-18" />
+      <Callout containerClassName="!py-18" />
     </div>
   );
 };

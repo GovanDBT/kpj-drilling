@@ -230,7 +230,7 @@ const About = () => {
             industry, including:
           </p>
         </div>
-        <div className="grid md:grid-cols-6 gap-15 items-center">
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-15 items-center">
           <img
             src={dwdClient}
             alt="DWD Drilling logo"
