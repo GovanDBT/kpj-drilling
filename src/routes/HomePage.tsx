@@ -12,27 +12,32 @@ import delivery from "/delivery.svg";
 import mud from "/mud.svg";
 import Callout from "../components/Callout";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 const cardItems = [
   {
     image: drilling,
     alt: "Card icon of a drilling machine",
     text: "Drilling Equipment Supply",
+    link: "/services#equipments",
   },
   {
     image: support,
     alt: "Card icon of a support system",
     text: "Technical Support & Advice",
+    link: "/services#support",
   },
   {
     image: delivery,
     alt: "Card icon of a delivery network",
     text: "Local Delivery Across Botswana",
+    link: "/services#delivery",
   },
   {
     image: mud,
     alt: "Card icon of a mud drilling machine",
     text: "Custom Drilling Mud Formulation",
+    link: "/services#custom",
   },
 ];
 
@@ -80,18 +85,32 @@ const Home = () => {
               Botswana.
             </p>
           </div>
-          <Button className="place-self-start">read more</Button>
+          <Link to="/about">
+            <Button className="place-self-start">read more</Button>
+          </Link>
         </div>
       </section>
       {/* SERVICES */}
       <section className="container my-20 items-center">
         <div className="flex flex-col md:flex-row text-center md:text-left justify-between mb-8">
           <h2>our services</h2>
-          <Button className="place-self-center">more services</Button>
+          <Link to="/services">
+            <Button className="place-self-center">more services</Button>
+          </Link>
         </div>
         <div className="grid lg:grid-cols-4 gap-6 justify-center">
           {cardItems.map((item) => (
-            <ServiceCard text={item.text} img={item.image} imgAlt={item.alt} />
+            <Link
+              to={item.link}
+              key={item.link}
+              className="hover:scale-103 transition duration-500 ease-in-out"
+            >
+              <ServiceCard
+                text={item.text}
+                img={item.image}
+                imgAlt={item.alt}
+              />
+            </Link>
           ))}
         </div>
       </section>

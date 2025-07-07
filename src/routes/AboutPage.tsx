@@ -19,6 +19,11 @@ const About = () => {
   const countUpRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    // Scroll to the top when the component is mounted
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -43,7 +48,7 @@ const About = () => {
     <div>
       {/* About header section */}
       <header className="bg-primary py-6">
-        <div className="container grid md:grid-cols-2 items-center">
+        <div className="container grid md:grid-cols-2 gap-x-5 items-center">
           <div className="text-white">
             <h1>About Us</h1>
             <p>
