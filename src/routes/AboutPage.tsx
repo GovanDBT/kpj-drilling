@@ -4,12 +4,12 @@ import CountUp from "react-countup";
 import Section from "../components/Section";
 import { motion } from "motion/react";
 // images
-import dwdClient from "/dwd.webp";
-import bgiClient from "/bgi.webp";
-import wucClient from "/wuc.webp";
-import dbClient from "/db.webp";
-import bdfClient from "/bdf.webp";
-import tlouClient from "/tlou.webp";
+// import dwdClient from "/dwd.webp";
+// import bgiClient from "/bgi.webp";
+// import wucClient from "/wuc.webp";
+// import dbClient from "/db.webp";
+// import bdfClient from "/bdf.webp";
+// import tlouClient from "/tlou.webp";
 import Badge from "../components/Badge";
 import offersImag from "/what-we-offer-section.webp";
 import Callout from "../components/Callout";
@@ -227,7 +227,7 @@ const About = () => {
         </div>
       </Section>
       {/* Clients */}
-      <Section>
+      {/* <Section>
         <div className="text-center mb-7">
           <h2>Our Clients</h2>
           <p>
@@ -273,7 +273,7 @@ const About = () => {
             className="grayscale hover:grayscale-0 hover:scale-110 transition duration-500 ease-in-out"
           />
         </div>
-      </Section>
+      </Section> */}
       <Callout />
     </div>
   );

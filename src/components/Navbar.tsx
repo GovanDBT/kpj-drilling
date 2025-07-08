@@ -8,7 +8,7 @@ import links from "../routes/routeLinks";
 
 const Navbar = () => {
   return (
-    <nav className="bg-primary text-white py-5 lg:py-0 z-2">
+    <nav className="bg-primary text-white py-5 lg:py-0 z-2 border-b-1 border-white/20">
       <div className="container flex justify-between items-center">
         {/* Logo */}
         <h2 className="font-bold text-3xl m-0">
