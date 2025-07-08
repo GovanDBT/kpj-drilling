@@ -16,7 +16,6 @@ const ContactForm = () => {
             className="form-control bg-white text-primary w-full outline-0 py-3 px-2 rounded"
             placeholder="your name..."
             id="name"
-            autoFocus
           />
         </div>
         <div>
