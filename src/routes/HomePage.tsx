@@ -148,7 +148,7 @@ const Home = () => {
       <Section divClassName="flex flex-col items-center gap-y-12">
         <h2 className="m-0">our products</h2>
         {homeProducts.length > 0 && (
-          <div className="grid grid-cols-4 gap-6">
+          <div className="grid lg:grid-cols-4 gap-6">
             {homeProducts.map((p) => (
               <ProductCard
                 key={p.pid}

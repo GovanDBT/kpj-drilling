@@ -40,7 +40,7 @@ const ProductsPage = () => {
       {products.length > 0 && (
         <Section
           sectionClassName="!my-20"
-          divClassName="grid grid-cols-3 gap-y-10 gap-x-8"
+          divClassName="grid lg:grid-cols-3 gap-y-10 gap-x-8"
         >
           {products.map((item) => (
             <ProductCard

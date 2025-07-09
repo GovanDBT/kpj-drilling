@@ -19,7 +19,7 @@ const Navbar = () => {
         </h2>
         {/* Desktop menu list */}
         <div className="hidden lg:inline-flex">
-          <ul className="list-none grid grid-cols-6 text-center gap-6">
+          <ul className="list-none grid grid-cols-6 text-center gap-0.5">
             {links.map((link) => (
               <NavLink
                 className={({ isActive }) =>
