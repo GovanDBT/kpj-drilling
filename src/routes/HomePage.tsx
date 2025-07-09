@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 import products from "../database/products";
 import ProductCard from "../components/ProductCard";
 import Section from "../components/Section";
+import { useEffect } from "react";
 
 const cardItems = [
   {
@@ -44,6 +45,12 @@ const cardItems = [
 ];
 
 const Home = () => {
+  // prevents page from scrolling when refreshed
+  useEffect(() => {
+    // Scroll to the top when the component is mounted
+    window.scrollTo(0, 0);
+  }, []);
+
   const homeProducts = products.filter((p) => p.pid <= 4);
 
   return (

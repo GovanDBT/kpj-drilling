@@ -1,8 +1,15 @@
 import { Mail, Mailbox, MapPin, Phone } from "lucide-react";
 import ContactForm from "../components/ContactForm";
 import { motion } from "motion/react";
+import { useEffect } from "react";
 
 const ContactPage = () => {
+  // prevents page from scrolling when refreshed
+  useEffect(() => {
+    // Scroll to the top when the component is mounted
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       {/* Services header section */}
