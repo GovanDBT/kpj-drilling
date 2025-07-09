@@ -1,19 +1,31 @@
 import { Mail, Mailbox, MapPin, Phone } from "lucide-react";
 import ContactForm from "../components/ContactForm";
+import { motion } from "motion/react";
 
 const ContactPage = () => {
   return (
     <div>
       {/* Services header section */}
       <header className="bg-primary py-5">
-        <div className="container text-white border-b-1 border-white/40 pb-6">
-          <h1>Contact Us</h1>
-          <p>
-            Get in touch with us for product inquiries, quotation requests,
-            technical support, or service requests. We're here to help you keep
-            your drilling operations running smoothly—wherever you are in
-            Botswana.
-          </p>
+        <div className="container border-b-1 border-white/40">
+          <motion.div
+            initial={{ transform: "translateY(30px)", opacity: 0 }}
+            animate={{
+              transform: "translateY(0px)",
+              opacity: 100,
+            }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", duration: 2 }}
+            className="text-white pb-6"
+          >
+            <h1>Contact Us</h1>
+            <p>
+              Get in touch with us for product inquiries, quotation requests,
+              technical support, or service requests. We're here to help you
+              keep your drilling operations running smoothly—wherever you are in
+              Botswana.
+            </p>
+          </motion.div>
         </div>
       </header>
       <section className="bg-primary pt-8 pb-14">

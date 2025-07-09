@@ -49,7 +49,16 @@ const About = () => {
       {/* About header section */}
       <header className="bg-primary py-6">
         <div className="container grid md:grid-cols-2 gap-x-5 items-center">
-          <div className="text-white">
+          <motion.div
+            initial={{ transform: "translateX(-80px)", opacity: 0 }}
+            animate={{
+              transform: "translateX(0px)",
+              opacity: 100,
+            }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", duration: 2 }}
+            className="text-white"
+          >
             <h1>About Us</h1>
             <p>
               Learn more about who we are, what we stand for, and how we've been
@@ -57,11 +66,18 @@ const About = () => {
               expertise to global partnerships, KPJ Drilling (Pty) Ltd is
               committed to delivering quality product and service we offer.
             </p>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            initial={{ transform: "translateX(80px)", opacity: 0 }}
+            animate={{
+              transform: "translateX(0px)",
+              opacity: 100,
+            }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", duration: 2 }}
             className="bg-[url('/about-page.webp')] bg-cover bg-top h-100 hidden md:inline-block"
             title="KPJ drilling employee loading products"
-          ></div>
+          />
         </div>
       </header>
       {/* What is KPJ section */}

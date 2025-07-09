@@ -2,10 +2,9 @@
 import Badge from "../components/Badge";
 import Button from "../components/Button";
 import ServiceCard from "../components/ServiceCard";
-
 // Images
+import logo from "/kpj-logo.png";
 import aboutImage from "/about-section.webp";
-import heroImage from "/landing-image.jpg";
 import drilling from "/drilling.svg";
 import support from "/support.svg";
 import delivery from "/delivery.svg";
@@ -13,6 +12,9 @@ import mud from "/mud.svg";
 import Callout from "../components/Callout";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
+import products from "../database/products";
+import ProductCard from "../components/ProductCard";
+import Section from "../components/Section";
 
 const cardItems = [
   {
@@ -42,14 +44,42 @@ const cardItems = [
 ];
 
 const Home = () => {
+  const homeProducts = products.filter((p) => p.pid <= 4);
+
   return (
     <div>
       {/* HERO */}
-      <header>
-        <img src={heroImage} alt="" />
+      <header className="bg-[url('/hero.webp')] bg-cover lg:bg-center h-140 place-content-center">
+        <motion.div
+          initial={{ transform: "translateY(100px)", opacity: 0 }}
+          animate={{
+            transform: "translateY(0px)",
+            opacity: 100,
+          }}
+          viewport={{ once: true }}
+          transition={{ type: "spring", duration: 2 }}
+        >
+          <div className="container flex flex-col lg:flex-row items-center gap-5 lg:gap-10">
+            <img
+              src={logo}
+              alt="KPJ Drilling logo"
+              title="KPJ Drilling logo"
+              className="h-50 lg:h-80"
+            />
+            <div>
+              <h1 className="text-5xl/normal text-center lg:text-left lg:text-[95px]/20 text-white mb-8 font-bold lg:font-medium">
+                KPJ Drilling{" "}
+                <span className="text-3xl font-medium">(Pty) Ltd</span>
+              </h1>
+              <p className="text-white text-4xl/normal text-center lg:text-5xl/15 font-normal italic">
+                Supplier of Drilling Consumables
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </header>
       {/* ABOUT */}
-      <section className="grid md:grid-cols-2 gap-y-10 gap-x-8 container my-20 items-center">
+      <section className="grid md:grid-cols-2 gap-y-10 gap-x-8 container my-30 items-center">
         <motion.div
           initial={{ transform: "translateX(-100px)", opacity: 0 }}
           whileInView={{
@@ -91,7 +121,7 @@ const Home = () => {
         </div>
       </section>
       {/* SERVICES */}
-      <section className="container my-20 items-center">
+      <section className="container my-30 items-center">
         <div className="flex flex-col md:flex-row text-center md:text-left justify-between mb-8">
           <h2>our services</h2>
           <Link to="/services">
@@ -115,12 +145,30 @@ const Home = () => {
         </div>
       </section>
       {/* PRODUCTS */}
-      <section className="container my-20">
-        <h2>our products</h2>
-        <Button>view all products</Button>
-      </section>
+      <Section divClassName="flex flex-col items-center gap-y-12">
+        <h2 className="m-0">our products</h2>
+        {homeProducts.length > 0 && (
+          <div className="grid grid-cols-4 gap-6">
+            {homeProducts.map((p) => (
+              <ProductCard
+                key={p.pid}
+                name={p.name}
+                description={p.description}
+                image={p.image}
+                id={p.pid}
+              />
+            ))}
+          </div>
+        )}
+        {homeProducts.length == 0 && (
+          <p className="text-center">Sorry, we couldn't find any Products</p>
+        )}
+        <Link to="/products">
+          <Button>view all products</Button>
+        </Link>
+      </Section>
       {/* BANNER IMG */}
-      <section className="mt-20 h-150 bg-[url('/callout-section.webp')] bg-cover bg-center">
+      <section className="mt-30 h-150 bg-[url('/callout-section.webp')] bg-cover bg-center">
         <div className="bg-linear-to-t from-primary to-white/0 h-full place-content-center">
           <div className="container lg:max-w-240 space-y-8">
             <div className="text-center">
@@ -139,7 +187,7 @@ const Home = () => {
         </div>
       </section>
       {/* CALLOUT */}
-      <Callout containerClassName="!py-18" />
+      <Callout containerClassName="!py-13" />
     </div>
   );
 };

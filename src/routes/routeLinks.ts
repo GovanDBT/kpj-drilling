@@ -5,7 +5,7 @@ const links = [
     { name: "Products", url: "/products" },
     { name: "Services", url: "/services" },
     { name: "Contacts", url: "/contact" },
-    { name: "Get a Quote", url: "/quote" },
+    { name: "Get a Quote", url: "/contact" },
   ];
 
 export default links

@@ -2,6 +2,7 @@ import { Brush, Headset, Truck, Wrench } from "lucide-react";
 import Callout from "../components/Callout";
 import Section from "../components/Section";
 import { useEffect } from "react";
+import { motion } from "motion/react";
 
 const ServicesPage = () => {
   useEffect(() => {
@@ -22,7 +23,16 @@ const ServicesPage = () => {
       {/* Services header section */}
       <header className="bg-primary py-6">
         <div className="container grid md:grid-cols-2 gap-x-5 items-center">
-          <div className="text-white">
+          <motion.div
+            initial={{ transform: "translateX(-80px)", opacity: 0 }}
+            animate={{
+              transform: "translateX(0px)",
+              opacity: 100,
+            }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", duration: 2 }}
+            className="text-white"
+          >
             <h1>Our Services</h1>
             <p>
               At KPJ Drilling, we provide reliable and efficient services
@@ -31,11 +41,18 @@ const ServicesPage = () => {
               your projects stay on track with the right tools, support, and
               delivery.
             </p>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            initial={{ transform: "translateX(80px)", opacity: 0 }}
+            animate={{
+              transform: "translateX(0px)",
+              opacity: 100,
+            }}
+            viewport={{ once: true }}
+            transition={{ type: "spring", duration: 2 }}
             className="bg-[url('/services-page.webp')] bg-cover bg-bottom h-100 hidden md:inline-block"
             title="KPJ drilling employee service manager"
-          ></div>
+          />
         </div>
       </header>
       <Section divClassName="space-y-17">

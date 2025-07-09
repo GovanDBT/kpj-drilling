@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "./Button";
 
 interface Props {
@@ -22,7 +23,9 @@ const Callout = ({ sectionClassName, containerClassName }: Props) => {
             Get a Customized Quote for Your Drilling Needs Today!
           </p>
         </div>
-        <Button color="white">view all products</Button>
+        <Link to="/products">
+          <Button color="white">view all products</Button>
+        </Link>
       </div>
     </section>
   );
