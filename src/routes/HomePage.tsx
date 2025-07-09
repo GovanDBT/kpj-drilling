@@ -56,7 +56,7 @@ const Home = () => {
   return (
     <div>
       {/* HERO */}
-      <header className="bg-[url('/hero.webp')] bg-cover lg:bg-center h-140 place-content-center">
+      <header className="bg-[url('/hero.webp')] bg-primary bg-cover lg:bg-center h-140 place-content-center">
         <motion.div
           initial={{ transform: "translateY(100px)", opacity: 0 }}
           animate={{
