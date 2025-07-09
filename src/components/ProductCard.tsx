@@ -17,7 +17,7 @@ const ProductCard = ({ name, description, id, image }: Props) => {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-        className="w-98 h-80 rounded overflow-hidden grow relative"
+        className="min-w-70 max-w-90 h-80 rounded overflow-hidden grow relative"
       >
         <div className="bg-linear-to-t from-primary to-white/0 h-full p-3 text-white flex flex-col place-content-end translate-y-20 hover:translate-y-0 transition duration-150 ease-in-out">
           <div className="flex justify-between">
