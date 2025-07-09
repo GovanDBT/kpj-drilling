@@ -47,7 +47,10 @@ const ProductDetails = () => {
         </div>
       </header>
 
-      <Section sectionClassName="!my-20" divClassName="flex gap-6">
+      <Section
+        sectionClassName="!my-20"
+        divClassName="flex flex-col lg:flex-row gap-6"
+      >
         <img src={product.image} className="h-70" />
         <div>
           <h1 className="text-2xl font-semibold mb-4">{product.name}</h1>
