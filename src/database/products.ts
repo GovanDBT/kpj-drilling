@@ -32,7 +32,7 @@ const products: Product[] = [
     },
     { 
         pid: 5,
-        name: 'AMC Samchem Drilling', 
+        name: 'Coring Equipments', 
         description: "Brief description of the product in mind. More about the product in mind. This is even more description about the product so the text becomes long for testing.",
         image: "/product.jpg"
     },

@@ -35,3 +35,7 @@
     @apply container mx-auto px-5
   }
 }
+
+.font-custom {
+  font-family: 'EB Garamond', Times, serif;
+}

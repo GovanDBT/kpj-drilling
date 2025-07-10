@@ -25,7 +25,7 @@ const ContactPage = () => {
             transition={{ type: "spring", duration: 2 }}
             className="text-white pb-6"
           >
-            <h1>Contact Us</h1>
+            <h1>Get a Quote</h1>
             <p>
               Get in touch with us for product inquiries, quotation requests,
               technical support, or service requests. We're here to help you

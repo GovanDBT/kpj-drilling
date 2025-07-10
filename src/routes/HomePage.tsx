@@ -74,7 +74,7 @@ const Home = () => {
               className="h-50 lg:h-80"
             />
             <div>
-              <h1 className="text-5xl/normal text-center lg:text-left lg:text-[95px]/20 text-white mb-8 font-bold lg:font-medium">
+              <h1 className="text-5xl/normal text-center lg:text-left lg:text-[95px]/20 text-white mb-8 font-bold lg:font-medium font-custom">
                 KPJ Drilling{" "}
                 <span className="text-3xl font-medium">(Pty) Ltd</span>
               </h1>
@@ -187,9 +187,11 @@ const Home = () => {
                 drilling consumables across Botswana.
               </p>
             </div>
-            <Button color="white" className="!place-self-center">
-              more details
-            </Button>
+            <Link to="/about">
+              <Button color="white" className="!place-self-center">
+                more details
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

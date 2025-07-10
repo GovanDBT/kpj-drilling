@@ -124,7 +124,7 @@ const About = () => {
           <div>
             <h2 className="text-8xl text-primary mb-3 flex items-center justify-center">
               <CountUp
-                end={52}
+                end={100}
                 duration={2}
                 start={startCounting ? 0 : undefined}
               />
