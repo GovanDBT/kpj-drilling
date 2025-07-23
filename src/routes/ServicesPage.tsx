@@ -26,7 +26,6 @@ const ServicesPage = () => {
         title="Services | KPJ Drilling"
         desc="We provide reliable and efficient services tailored to the needs of Botswana's drilling industry"
         keywords="KPJ Drilling services, Drilling Equipment Supply, Custom Drilling Mud Formulation, Local Delivery, Technical Support and Advice"
-        type="Service"
       />
       {/* Services header section */}
       <header className="bg-primary py-6">
