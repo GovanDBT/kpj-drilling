@@ -13,6 +13,7 @@ import { motion } from "motion/react";
 import Badge from "../components/Badge";
 import offersImag from "/what-we-offer-section.webp";
 import Callout from "../components/Callout";
+import Seo from "../components/Seo";
 
 const About = () => {
   const [startCounting, setStartCounting] = useState(false);
@@ -46,6 +47,12 @@ const About = () => {
 
   return (
     <div>
+      {/* SEO */}
+      <Seo
+        title="About Us | KPJ Drilling"
+        desc="Learn more about who we are, what we stand for, and how we've been powering Botswana's drilling industry since 2001"
+        keywords="About KPJ Drilling, KPJ Drilling vision, KPJ Drilling mission, "
+      />
       {/* About header section */}
       <header className="bg-primary py-6">
         <div className="container grid md:grid-cols-2 gap-x-5 items-center">

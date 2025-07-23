@@ -3,6 +3,7 @@ import products from "../database/products";
 import { ChevronRight } from "lucide-react";
 import Section from "../components/Section";
 import { useEffect } from "react";
+import Seo from "../components/Seo";
 
 const ProductDetails = () => {
   useEffect(() => {
@@ -37,6 +38,12 @@ const ProductDetails = () => {
 
   return (
     <div>
+      {/* SEO */}
+      <Seo
+        title={product.name + " | KPJ Drilling"}
+        desc="We stock a wide range of reliable, high-performance drilling consumables and equipment—sourced from trusted international suppliers and tailored for Botswana's diverse drilling environments"
+        keywords={product.name}
+      />
       <header className="bg-primary text-white py-4">
         <div className="container flex gap-4 items-center">
           <Link to="/products" className="underline">

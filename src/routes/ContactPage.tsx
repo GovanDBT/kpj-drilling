@@ -2,6 +2,7 @@ import { Mail, Mailbox, MapPin, Phone } from "lucide-react";
 import ContactForm from "../components/ContactForm";
 import { motion } from "motion/react";
 import { useEffect } from "react";
+import Seo from "../components/Seo";
 
 const ContactPage = () => {
   // prevents page from scrolling when refreshed
@@ -12,6 +13,12 @@ const ContactPage = () => {
 
   return (
     <div>
+      {/* SEO */}
+      <Seo
+        title="Contact Us | KPJ Drilling"
+        desc="Get in touch with us for product inquiries, quotation requests, technical support, or service requests"
+        keywords="KPJ Drilling contacts, KPJ Drilling quote, KPJ Drilling email, KPJ Drilling phone, KPJ Drilling address, KPJ Drilling location, "
+      />
       {/* Services header section */}
       <header className="bg-primary py-5">
         <div className="container border-b-1 border-white/40">

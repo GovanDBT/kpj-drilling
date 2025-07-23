@@ -3,6 +3,7 @@ import ProductCard from "../components/ProductCard";
 import Section from "../components/Section";
 import products from "../database/products";
 import { motion } from "motion/react";
+import Seo from "../components/Seo";
 
 const ProductsPage = () => {
   useEffect(() => {
@@ -12,6 +13,12 @@ const ProductsPage = () => {
 
   return (
     <div>
+      {/* SEO */}
+      <Seo
+        title="Products | KPJ Drilling"
+        desc="We stock a wide range of reliable, high-performance drilling consumables and equipment—sourced from trusted international suppliers and tailored for Botswana's diverse drilling environments"
+        keywords="Drilling equipments, DTH equipments, Drilling fluids and additives, Core storage, Geological and consumables, Coring equipment "
+      />
       {/* About header section */}
       <header className="bg-primary py-6">
         <div className="container">

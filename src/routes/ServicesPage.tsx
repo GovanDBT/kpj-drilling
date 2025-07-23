@@ -3,6 +3,7 @@ import Callout from "../components/Callout";
 import Section from "../components/Section";
 import { useEffect } from "react";
 import { motion } from "motion/react";
+import Seo from "../components/Seo";
 
 const ServicesPage = () => {
   useEffect(() => {
@@ -20,6 +21,12 @@ const ServicesPage = () => {
   }, []);
   return (
     <div>
+      {/* SEO */}
+      <Seo
+        title="Services | KPJ Drilling"
+        desc="We provide reliable and efficient services tailored to the needs of Botswana's drilling industry"
+        keywords="KPJ Drilling services, Drilling Equipment Supply, Custom Drilling Mud Formulation, Local Delivery, Technical Support and Advice"
+      />
       {/* Services header section */}
       <header className="bg-primary py-6">
         <div className="container grid md:grid-cols-2 gap-x-5 items-center">

@@ -16,6 +16,7 @@ import products from "../database/products";
 import ProductCard from "../components/ProductCard";
 import Section from "../components/Section";
 import { useEffect } from "react";
+import Seo from "../components/Seo";
 
 const cardItems = [
   {
@@ -55,6 +56,11 @@ const Home = () => {
 
   return (
     <div>
+      {/** SEO */}
+      <Seo
+        desc="KPJ Drilling (Pty) Ltd is a supplier of drilling consumables for the drilling industry, not only borehole drilling but also exploration drilling"
+        keywords="KPJ Drilling, Drilling, Supplier of Drilling Consumables, supplier of drilling consumables in Botswana, Drilling equipments"
+      />
       {/* HERO */}
       <header className="bg-[url('/hero.webp')] bg-primary bg-cover lg:bg-center h-140 place-content-center">
         <motion.div
