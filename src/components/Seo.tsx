@@ -1,12 +1,37 @@
 import socials from "/kpj-social.jpg";
+import logo from "/kpj-logo.png";
 
 interface Props {
   title?: string;
   desc: string;
   keywords: string;
+  type?: string;
 }
 
-const Seo = ({ title = "KPJ Drilling", desc, keywords }: Props) => {
+const Seo = ({
+  title = "KPJ Drilling",
+  desc,
+  keywords,
+  type = "Organization",
+}: Props) => {
+  // Schema Markup JSON-LD
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": { type },
+    name: "KPJ Drilling",
+    url: "https://kpjdrilling.co.bw",
+    logo: logo,
+    description: desc,
+    sameAs: ["https://www.facebook.com/kpjdrillingbotswana"],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+2673190837",
+      contactType: "Customer Service",
+      areaServed: "BW",
+      availableLanguage: "English",
+    },
+  };
+
   return (
     <head>
       <title>{title}</title>
@@ -16,6 +41,8 @@ const Seo = ({ title = "KPJ Drilling", desc, keywords }: Props) => {
       <meta property="og:title" content={title} />
       <meta property="og:description" content={desc} />
       <meta property="og:image" content={socials} />
+      {/* Schema Markup JSON-LD */}
+      <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
     </head>
   );
 };
