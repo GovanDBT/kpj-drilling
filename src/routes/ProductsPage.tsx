@@ -53,7 +53,7 @@ const ProductsPage = () => {
             <ProductCard
               key={item.pid}
               name={item.name}
-              description={item.description}
+              description={item.brief_desc}
               image={item.image}
               id={item.pid}
             />

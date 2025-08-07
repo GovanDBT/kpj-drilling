@@ -166,7 +166,7 @@ const Home = () => {
               <ProductCard
                 key={p.pid}
                 name={p.name}
-                description={p.description}
+                description={p.brief_desc}
                 image={p.image}
                 id={p.pid}
               />

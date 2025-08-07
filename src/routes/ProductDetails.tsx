@@ -58,10 +58,23 @@ const ProductDetails = () => {
         sectionClassName="!my-20"
         divClassName="flex flex-col lg:flex-row gap-6"
       >
-        <img src={product.image} className="h-70" />
+        <img src={product.image} className="h-70 rounded-lg" />
         <div>
-          <h1 className="text-2xl font-semibold mb-4">{product.name}</h1>
-          <p className="text-gray-700 leading-relaxed">{product.description}</p>
+          <h1 className="text-2xl font-semibold mb-1">{product.name}</h1>
+          <p className="text-gray-500 leading-relaxed mb-5 border-b pb-6 border-gray-300">
+            {product.brief_desc}
+          </p>
+          <p>{product.desc}</p>
+        </div>
+      </Section>
+      <Section sectionClassName="!my-5">
+        <div className="grid grid-cols-4 gap-5">
+          {product.gallery?.map((item) => (
+            <div>
+              <img src={item.image} className="rounded-lg" />
+              <p className="text-sm text-gray-400">{item.name}</p>
+            </div>
+          ))}
         </div>
       </Section>
     </div>
