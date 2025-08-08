@@ -75,9 +75,23 @@ const products: Product[] = [
     { 
         pid: 4,
         name: 'Geological Equipment', 
-        brief_desc: "Quality geological tools and field equipment, from sample storage to measurement tools, essential for exploration and site documentation.",
-        desc: "We supply a comprehensive range of Down-the-Hole (DTH) drilling equipment engineered for optimal performance and durability. Our inventory includes Drill Rods, Hammers, Bits, Adaptors, Non-Return Valves (NRVs), Thread Protectors, Stabilisers, and more. With sizes ranging from 3.5” to 17.5” diameter, our DTH solutions support deep, hard rock drilling with minimal deviation and maximum energy transfer.",
-        image: "/tools.webp"
+        brief_desc: "Geo Explore Store Distributer for their full range of Geological products including Core Storage Solutions, Sampling Bags, Compasses, Sample Tickets, Dip Meters etc",
+        desc: "We distribute the full range of Geo Explore Store geological supplies, supporting exploration teams with reliable tools for sampling and documentation. Our offerings include Core Storage Boxes, Sample Bags, Geological Compasses, Sample Tickets, Dip Meters, and more. These tools are crafted for field durability and data accuracy, ensuring efficient sample tracking and site logging in all terrain conditions.",
+        image: "/tools.webp",
+        gallery: [
+            {image: "/Brunton-Tru-Arc-Compass.webp", name: "Brunton Tru Arc Compass"},
+            {image: "/Clino 1M Rule.webp", name: "Clino 1M Rule"},
+            {image: "/Estwing Geological hammer.webp", name: "Estwing Geological hammer"},
+            {image: "/Geological Wet strength Notebook and China Marker.webp", name: "Geological Wet strength Notebook and China Marker"},
+            {image: "/Goniometer.webp", name: "Goniometer"},
+            {image: "/Illuminated Loupe.webp", name: "Illuminated Loupe"},
+            {image: "/Machinists Scriber.webp", name: "public/Machinists Scriber"},
+            {image: "/Manilla Tags and Sample Ticket Books.webp", name: "Manilla Tags and Sample Ticket Books"},
+            {image: "/Photographic Scale.webp", name: "Photographic Scale"},
+            {image: "/sample storage bags and trays.webp", name: "Sample storage bags and trays"},
+            {image: "/Tearoff Sample Ticket Books.webp", name: "Tearoff Sample Ticket Books"},
+            {image: "/Test Sieve.webp", name: "Test Sieve"},
+        ]
     },
     { 
         pid: 5,
