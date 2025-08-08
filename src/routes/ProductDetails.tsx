@@ -4,6 +4,7 @@ import { ChevronRight } from "lucide-react";
 import Section from "../components/Section";
 import { useEffect } from "react";
 import Seo from "../components/Seo";
+import ModalImage from "react-modal-image";
 
 const ProductDetails = () => {
   useEffect(() => {
@@ -71,7 +72,13 @@ const ProductDetails = () => {
         <div className="grid grid-cols-4 gap-5">
           {product.gallery?.map((item) => (
             <div>
-              <img src={item.image} className="rounded-lg" />
+              <ModalImage
+                small={item.image}
+                large={item.image}
+                alt={item.name}
+                className="rounded-lg cursor-pointer"
+              />
+              {/* <img src={item.image} className="rounded-lg cursor-sw-resize" /> */}
               <p className="text-sm text-gray-400">{item.name}</p>
             </div>
           ))}
