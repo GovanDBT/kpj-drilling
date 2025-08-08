@@ -51,6 +51,15 @@ const products: Product[] = [
             {image: "/AMC-Wondercut.webp", name: "AMC Wondercut - 25KG NETT"},
             {image: "/Drilling-Chemicals.webp", name: "Drilling Chemicals"},
             {image: "/AUS-Plug.webp", name: "AUS Plug - 15KG NETT"},
+        ]
+    },
+    { 
+        pid: 3,
+        name: 'Oils & Lubricants', 
+        brief_desc: "Locally produced oils, greases, and antifreeze designed for engine, hydraulic, and DTH hammer maintenance in harsh drilling environments.",
+        desc: "KPJ Drilling stocks a practical range of Botswana-manufactured oils and lubricants tailored for the drilling industry. Our products include Engine Oils, Hydraulic Fluids, Greases, and Antifreeze solutions. Formulated to withstand extreme operating conditions, these lubricants ensure smooth equipment performance, reduce wear, and extend the operational life of your machinery.",
+        image: "/Oils.webp",
+        gallery: [
             {image: "/Antiwear-Hydraulic-Oil.webp", name: "Antiwear Hydraulic Oil - 20 Liters"},
             {image: "/Automotive-Engine-Oil.webp", name: "Automotive Engine Oil - 20 Liters"},
             {image: "/Automotive-Gear-Oil.webp", name: "Automotive Gear Oil - 20 Liters"},
@@ -64,13 +73,6 @@ const products: Product[] = [
             {image: "/Thread-Compound-RSC-Blue.webp", name: "Thread Compound RSC Blue - 15KG"},
             {image: "/Greases.webp", name: "Grease Chemicals"},
         ]
-    },
-    { 
-        pid: 3,
-        name: 'Oils & Lubricants', 
-        brief_desc: "Locally produced oils, greases, and antifreeze designed for engine, hydraulic, and DTH hammer maintenance in harsh drilling environments.",
-        desc: "We supply a comprehensive range of Down-the-Hole (DTH) drilling equipment engineered for optimal performance and durability. Our inventory includes Drill Rods, Hammers, Bits, Adaptors, Non-Return Valves (NRVs), Thread Protectors, Stabilisers, and more. With sizes ranging from 3.5” to 17.5” diameter, our DTH solutions support deep, hard rock drilling with minimal deviation and maximum energy transfer.",
-        image: "/storage.webp"
     },
     { 
         pid: 4,
