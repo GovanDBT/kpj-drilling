@@ -1,5 +1,5 @@
 import socials from "/kpj-social.jpg";
-// import logo from "/kpj-logo.png";
+import logo from "/kpj-logo.png";
 
 interface Props {
   title?: string;
@@ -9,25 +9,25 @@ interface Props {
 
 const Seo = ({ title = "KPJ Drilling", desc, keywords }: Props) => {
   // Schema Markup JSON-LD
-  // const schemaMarkup = {
-  //   "@context": "https://schema.org",
-  //   "@type": "Organization",
-  //   name: "KPJ Drilling",
-  //   url: "http://localhost:4173/",
-  //   logo: logo,
-  //   description: desc,
-  //   sameAs: ["https://www.facebook.com/kpjdrillingbotswana"],
-  //   contactPoint: {
-  //     "@type": "ContactPoint",
-  //     telephone: "+2673190837",
-  //     contactType: "Customer Service",
-  //     areaServed: "BW",
-  //     availableLanguage: "English",
-  //   },
-  // };
+  const schemaMarkup = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "KPJ Drilling",
+    url: "http://localhost:5173",
+    logo: logo,
+    description: desc,
+    sameAs: ["https://www.facebook.com/kpjdrillingbotswana"],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+2673190837",
+      contactType: "Customer Service",
+      areaServed: "BW",
+      availableLanguage: "English",
+    },
+  };
 
   return (
-    <head>
+    <div>
       <title>{title}</title>
       <meta name="description" content={desc} />
       <meta name="keywords" content={keywords} />
@@ -36,8 +36,8 @@ const Seo = ({ title = "KPJ Drilling", desc, keywords }: Props) => {
       <meta property="og:description" content={desc} />
       <meta property="og:image" content={socials} />
       {/* Schema Markup JSON-LD */}
-      {/* <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script> */}
-    </head>
+      <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
+    </div>
   );
 };
 
