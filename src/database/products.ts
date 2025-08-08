@@ -98,7 +98,13 @@ const products: Product[] = [
         name: 'Coring Equipments', 
         brief_desc: "Full range of Coring equipment from Rods, Casings, Bits, Full Barrels, Outer Tubes, Inner Tubes, Split Tubes, Spanners, Wrenches, Pump-Out Kits etc.",
         desc: "Our coring equipment line supports accurate geological core sampling and exploration projects. We provide Rods, Casings, Bits, Core Barrels, Outer and Inner Tubes, Split Tubes, Spanners, Wrenches, and Pump-Out Kits. Designed for durability and compatibility across different drilling rigs and conditions, our products ensure high core recovery and sample integrity in the field.",
-        image: "/product.jpg"
+        image: "/HWT-Casing01.jpg",
+        gallery: [
+            {image: "/HWT Casing01.webp", name: "HWT Casing"},
+            {image: "/HWT Casing02.webp", name: "HWT Casing"},
+            {image: "/HWT Casing03.webp", name: "HWT Casing"},
+            {image: "/HWT Casing04.webp", name: "HWT Casing"},
+        ]
     },
 ];
 

@@ -68,7 +68,7 @@ const ProductDetails = () => {
           <p>{product.desc}</p>
         </div>
       </Section>
-      <Section sectionClassName="!my-5">
+      <Section sectionClassName="!mt-5 !mb-10">
         <div className="grid grid-cols-4 gap-5">
           {product.gallery?.map((item) => (
             <div>
