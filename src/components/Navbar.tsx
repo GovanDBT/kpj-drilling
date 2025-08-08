@@ -28,6 +28,7 @@ const Navbar = () => {
                     : "font-normal py-6 px-2 hover:bg-secondary"
                 }
                 to={link.url}
+                key={link.url}
               >
                 <li key={link.url} className="text-nowrap text-[16px]">
                   {link.name}

@@ -69,7 +69,7 @@ const ProductDetails = () => {
         </div>
       </Section>
       <Section sectionClassName="!mt-5 !mb-10">
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
           {product.gallery?.map((item) => (
             <div>
               <ModalImage
