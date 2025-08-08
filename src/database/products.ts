@@ -56,7 +56,7 @@ const products: Product[] = [
     { 
         pid: 3,
         name: 'Oils & Lubricants', 
-        brief_desc: "Locally produced oils, greases, and antifreeze designed for engine, hydraulic, and DTH hammer maintenance in harsh drilling environments.",
+        brief_desc: "Basic range of Botswana produced Oils for Engines, DTH Hammers and Hydraulics including Greases and Antifreeze.",
         desc: "KPJ Drilling stocks a practical range of Botswana-manufactured oils and lubricants tailored for the drilling industry. Our products include Engine Oils, Hydraulic Fluids, Greases, and Antifreeze solutions. Formulated to withstand extreme operating conditions, these lubricants ensure smooth equipment performance, reduce wear, and extend the operational life of your machinery.",
         image: "/Oils.webp",
         gallery: [
