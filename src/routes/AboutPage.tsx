@@ -3,15 +3,8 @@ import { useState, useRef, useEffect } from "react";
 import CountUp from "react-countup";
 import Section from "../components/Section";
 import { motion } from "motion/react";
-// images
-// import dwdClient from "/dwd.webp";
-// import bgiClient from "/bgi.webp";
-// import wucClient from "/wuc.webp";
-// import dbClient from "/db.webp";
-// import bdfClient from "/bdf.webp";
-// import tlouClient from "/tlou.webp";
 import Badge from "../components/Badge";
-import offersImag from "/what-we-offer-section.webp";
+import offersImag from "../assets/what-we-offer-section.webp";
 import Callout from "../components/Callout";
 import Seo from "../components/Seo";
 
@@ -82,7 +75,7 @@ const About = () => {
             }}
             viewport={{ once: true }}
             transition={{ type: "spring", duration: 2 }}
-            className="bg-[url('/about-page.webp')] bg-cover bg-top h-100 hidden md:inline-block"
+            className="bg-[url('./assets/about-page.webp')] bg-cover bg-top h-100 hidden md:inline-block"
             title="KPJ drilling employee loading products"
           />
         </div>

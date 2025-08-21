@@ -57,7 +57,7 @@ const ServicesPage = () => {
             }}
             viewport={{ once: true }}
             transition={{ type: "spring", duration: 2 }}
-            className="bg-[url('/services-page.webp')] bg-cover bg-bottom h-100 hidden md:inline-block"
+            className="bg-[url('./assets/services-page.webp')] bg-cover bg-bottom h-100 hidden md:inline-block"
             title="KPJ drilling employee service manager"
           />
         </div>

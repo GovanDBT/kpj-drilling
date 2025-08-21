@@ -3,12 +3,12 @@ import Badge from "../components/Badge";
 import Button from "../components/Button";
 import ServiceCard from "../components/ServiceCard";
 // Images
-import logo from "/kpj-logo.png";
-import aboutImage from "/about-section.webp";
-import drilling from "/drilling.svg";
-import support from "/support.svg";
-import delivery from "/delivery.svg";
-import mud from "/mud.svg";
+import logo from "../assets/kpj-logo.png";
+import aboutImage from "../assets/about-section.webp";
+import drilling from "../assets/drilling.svg";
+import support from "../assets/support.svg";
+import delivery from "../assets/delivery.svg";
+import mud from "../assets/mud.svg";
 import Callout from "../components/Callout";
 import { motion } from "motion/react";
 import { Link } from "react-router-dom";
@@ -62,7 +62,7 @@ const Home = () => {
         keywords="KPJ Drilling, Drilling, Supplier of Drilling Consumables, supplier of drilling consumables in Botswana, Drilling equipments"
       />
       {/* HERO */}
-      <header className="bg-[url('/hero.webp')] bg-primary bg-cover lg:bg-center h-140 place-content-center">
+      <header className="bg-[url('./assets/hero.webp')] bg-primary bg-cover lg:bg-center h-140 place-content-center">
         <motion.div
           initial={{ transform: "translateY(100px)", opacity: 0 }}
           animate={{
@@ -181,7 +181,7 @@ const Home = () => {
         </Link>
       </Section>
       {/* BANNER IMG */}
-      <section className="mt-30 h-150 bg-[url('/callout-section.webp')] bg-cover bg-center">
+      <section className="mt-30 h-150 bg-[url('./assets/callout-section.webp')] bg-cover bg-center">
         <div className="bg-linear-to-t from-primary to-white/0 h-full place-content-center">
           <div className="container lg:max-w-240 space-y-8">
             <div className="text-center">

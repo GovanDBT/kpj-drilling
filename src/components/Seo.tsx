@@ -1,5 +1,5 @@
-import socials from "/kpj-social.jpg";
-import logo from "/kpj-logo.png";
+import socials from "../assets/kpj-social.jpg";
+import logo from "../assets/kpj-logo.png";
 
 interface Props {
   title?: string;
