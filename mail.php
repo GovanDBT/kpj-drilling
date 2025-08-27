@@ -32,16 +32,16 @@ $mail = new PHPMailer(true);
 try {
     //Server settings
     $mail->isSMTP();
-    $mail->Host       = 'smtppro.zoho.com';
+    $mail->Host       = '****';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'developer01@webmart.co.bw';
-    $mail->Password   = '7168thembid';
+    $mail->Username   = '****';
+    $mail->Password   = '*****';
     $mail->SMTPSecure = 'tls';
     $mail->Port       = 587;
 
     //Recipients
-    $mail->setFrom('developer01@webmart.co.bw', 'KPJ Website');
-    $mail->addAddress('developer01@webmart.co.bw'); // Send to yourself
+    $mail->setFrom('****', 'Company Email');
+    $mail->addAddress('****'); // Send to yourself
 
     //Content
     $mail->isHTML(true);
