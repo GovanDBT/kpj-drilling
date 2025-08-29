@@ -40,7 +40,7 @@ const ContactForm = () => {
     setSuccess(false);
     setError(false);
     try {
-      const res = await fetch("http://kpjdrilling.co.bw/mail.php", {
+      const res = await fetch("https://kpjdrilling.co.bw/mail.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
